@@ -20,8 +20,6 @@
 @property CGFloat lastYCoord;
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (weak, nonatomic) IBOutlet UIView *segmentView;
-@property CGFloat lastDownYCoord;
-@property CGFloat lastTopYCoord;
 @property (weak, nonatomic) IBOutlet UIView *cheatView;
 @property (weak, nonatomic) IBOutlet UISearchBar *searchBar;
 @property BOOL bounce;
@@ -46,8 +44,6 @@
     tapRecon.numberOfTapsRequired = 1;
     [self.navigationController.navigationBar addGestureRecognizer:tapRecon];
     
-    //self.tableView.tableHeaderView.backgroundColor = [UIColor whiteColor];
-  
     UIImage* img1 = [UIImage imageNamed: @"audi.png"];
     UIImage* img2 = [UIImage imageNamed: @"merc.jpeg"];
     
@@ -109,46 +105,33 @@
     
     self.lastYCoord = scrollView.contentOffset.y;
     
-    CGFloat tempCoord;
-    BOOL scrollDirectionChanged = NO;
-    
     if (delta < 0) {
         
-        scrollDirectionChanged = YES;
-        
         if (!self.bounce) {
-            if ((self.lastTopYCoord <= 0)) {
-                self.lastTopYCoord = 44;
-            }
-            // NSLog(@"UP");
-                           self.topConstraint.constant =  (scrollView.contentOffset.y > 44) ? MAX(-52.5, self.topConstraint.constant + delta)/*self.lastTopYCoord - scrollView.contentOffset.y*/ : MAX( - 52.5, 44 - scrollView.contentOffset.y);
             
-            self.lastDownYCoord = scrollView.contentOffset.y;
-            
+            self.topConstraint.constant = (scrollView.contentOffset.y > 44) ? MAX(-52.5, self.topConstraint.constant + delta):
+                                                                              MAX( - 52.5, 44 - scrollView.contentOffset.y);
             
         }
-            }
+    }
     else {
-        
-        self.lastTopYCoord = scrollView.contentOffset.y;
         
         if (self.bounce) {
             
-           self.topConstraint.constant = - 52.5;
+            self.topConstraint.constant = - 52.5;
             
         }
         else {
-            //NSLog(@"DOWN");
-           
-            self.topConstraint.constant = ((scrollView.contentOffset.y > 44)) ? MIN(0, self.topConstraint.constant + delta/*- 52.5 - (scrollView.contentOffset.y - self.lastDownYCoord)*/) : 44 - scrollView.contentOffset.y;
             
-            }
+            self.topConstraint.constant = ((scrollView.contentOffset.y > 44)) ? MIN(0, self.topConstraint.constant + delta):
+                                                                                44 - scrollView.contentOffset.y;
+            
+        }
     }
     
     [self.view layoutIfNeeded];
     
     [self.searchBar resignFirstResponder];
-    NSLog(@"%f, %f %f", self.topConstraint.constant, scrollView.contentOffset.y, delta);
     
 }
 
