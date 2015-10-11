@@ -121,7 +121,7 @@
                 self.lastTopYCoord = 44;
             }
             // NSLog(@"UP");
-                           self.topConstraint.constant =  (scrollView.contentOffset.y > 44) ? self.lastTopYCoord - scrollView.contentOffset.y : MAX( - 52.5, 44 - scrollView.contentOffset.y);
+                           self.topConstraint.constant =  (scrollView.contentOffset.y > 44) ? MAX(-52.5, self.topConstraint.constant + delta)/*self.lastTopYCoord - scrollView.contentOffset.y*/ : MAX( - 52.5, 44 - scrollView.contentOffset.y);
             
             self.lastDownYCoord = scrollView.contentOffset.y;
             
@@ -140,7 +140,7 @@
         else {
             //NSLog(@"DOWN");
            
-            self.topConstraint.constant = ((scrollView.contentOffset.y > 44)) ? MIN(0, - 52.5 - (scrollView.contentOffset.y - self.lastDownYCoord)) : 44 - scrollView.contentOffset.y;
+            self.topConstraint.constant = ((scrollView.contentOffset.y > 44)) ? MIN(0, self.topConstraint.constant + delta/*- 52.5 - (scrollView.contentOffset.y - self.lastDownYCoord)*/) : 44 - scrollView.contentOffset.y;
             
             }
     }
@@ -148,7 +148,7 @@
     [self.view layoutIfNeeded];
     
     [self.searchBar resignFirstResponder];
-    NSLog(@"%f, %f %f", self.topConstraint.constant, self.lastTopYCoord - scrollView.contentOffset.y, MIN(0, - 52.5 - (scrollView.contentOffset.y - self.lastDownYCoord)));
+    NSLog(@"%f, %f %f", self.topConstraint.constant, scrollView.contentOffset.y, delta);
     
 }
 
