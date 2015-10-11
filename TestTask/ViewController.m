@@ -51,11 +51,12 @@
     [self.arrayOfPictures addObject: img2];
     
     for (int i = 0; i < NUMBER_OF_ROWS; i++) {
+        
         [arrayOfHeights addObject: [self.arrayOfPictures objectAtIndex: arc4random() % [self.arrayOfPictures count]]];
         
     }
-    
-    }
+       
+}
 
 - (IBAction) navigationBarTap:(id) sender {
     [self.tableView setContentOffset: CGPointMake(0, -self.tableView.contentInset.top) animated: YES];

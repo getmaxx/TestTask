@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2975033B1BCA5DD400A1447D /* chelsea.png in Resources */ = {isa = PBXBuildFile; fileRef = 297503391BCA5DD400A1447D /* chelsea.png */; settings = {ASSET_TAGS = (); }; };
-		2975033C1BCA5DD400A1447D /* cska.png in Resources */ = {isa = PBXBuildFile; fileRef = 2975033A1BCA5DD400A1447D /* cska.png */; settings = {ASSET_TAGS = (); }; };
 		2975033F1BCA978000A1447D /* audi.png in Resources */ = {isa = PBXBuildFile; fileRef = 2975033D1BCA978000A1447D /* audi.png */; settings = {ASSET_TAGS = (); }; };
 		297503401BCA978000A1447D /* merc.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 2975033E1BCA978000A1447D /* merc.jpeg */; settings = {ASSET_TAGS = (); }; };
 		29F6CC9E1BC7F20B001A6657 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29F6CC9D1BC7F20B001A6657 /* main.m */; };
@@ -18,17 +16,11 @@
 		29F6CCAC1BC7F20B001A6657 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29F6CCAA1BC7F20B001A6657 /* LaunchScreen.storyboard */; };
 		29F6CCB51BC7F474001A6657 /* IVMainView.m in Sources */ = {isa = PBXBuildFile; fileRef = 29F6CCB41BC7F474001A6657 /* IVMainView.m */; settings = {ASSET_TAGS = (); }; };
 		29F6CCB81BC81C8F001A6657 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 29F6CCB71BC81C8F001A6657 /* ViewController.m */; settings = {ASSET_TAGS = (); }; };
-		29F6CCBB1BC9253B001A6657 /* iphone1.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 29F6CCBA1BC9253B001A6657 /* iphone1.jpeg */; settings = {ASSET_TAGS = (); }; };
-		29F6CCBE1BC9253F001A6657 /* iphone4.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 29F6CCBC1BC9253F001A6657 /* iphone4.jpeg */; settings = {ASSET_TAGS = (); }; };
-		29F6CCBF1BC9253F001A6657 /* iphone5.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 29F6CCBD1BC9253F001A6657 /* iphone5.jpeg */; settings = {ASSET_TAGS = (); }; };
 		29F6CCC61BC9270C001A6657 /* IVModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 29F6CCC51BC9270C001A6657 /* IVModel.m */; settings = {ASSET_TAGS = (); }; };
 		29F6CCC91BC93177001A6657 /* IVCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 29F6CCC81BC93177001A6657 /* IVCell.m */; settings = {ASSET_TAGS = (); }; };
-		29F6CCCD1BC939A3001A6657 /* asd.png in Resources */ = {isa = PBXBuildFile; fileRef = 29F6CCCC1BC939A3001A6657 /* asd.png */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		297503391BCA5DD400A1447D /* chelsea.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chelsea.png; sourceTree = "<group>"; };
-		2975033A1BCA5DD400A1447D /* cska.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cska.png; sourceTree = "<group>"; };
 		2975033D1BCA978000A1447D /* audi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = audi.png; sourceTree = "<group>"; };
 		2975033E1BCA978000A1447D /* merc.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = merc.jpeg; sourceTree = "<group>"; };
 		29F6CC991BC7F20A001A6657 /* TestTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -43,14 +35,10 @@
 		29F6CCB41BC7F474001A6657 /* IVMainView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IVMainView.m; sourceTree = "<group>"; };
 		29F6CCB61BC81C8F001A6657 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		29F6CCB71BC81C8F001A6657 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		29F6CCBA1BC9253B001A6657 /* iphone1.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = iphone1.jpeg; sourceTree = "<group>"; };
-		29F6CCBC1BC9253F001A6657 /* iphone4.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = iphone4.jpeg; sourceTree = "<group>"; };
-		29F6CCBD1BC9253F001A6657 /* iphone5.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = iphone5.jpeg; sourceTree = "<group>"; };
 		29F6CCC41BC9270C001A6657 /* IVModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IVModel.h; sourceTree = "<group>"; };
 		29F6CCC51BC9270C001A6657 /* IVModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IVModel.m; sourceTree = "<group>"; };
 		29F6CCC71BC93177001A6657 /* IVCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IVCell.h; sourceTree = "<group>"; };
 		29F6CCC81BC93177001A6657 /* IVCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IVCell.m; sourceTree = "<group>"; };
-		29F6CCCC1BC939A3001A6657 /* asd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = asd.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,14 +101,8 @@
 		29F6CCB91BC9252B001A6657 /* img */ = {
 			isa = PBXGroup;
 			children = (
-				297503391BCA5DD400A1447D /* chelsea.png */,
 				2975033D1BCA978000A1447D /* audi.png */,
 				2975033E1BCA978000A1447D /* merc.jpeg */,
-				2975033A1BCA5DD400A1447D /* cska.png */,
-				29F6CCCC1BC939A3001A6657 /* asd.png */,
-				29F6CCBA1BC9253B001A6657 /* iphone1.jpeg */,
-				29F6CCBC1BC9253F001A6657 /* iphone4.jpeg */,
-				29F6CCBD1BC9253F001A6657 /* iphone5.jpeg */,
 			);
 			name = img;
 			sourceTree = "<group>";
@@ -192,17 +174,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				29F6CCBF1BC9253F001A6657 /* iphone5.jpeg in Resources */,
-				29F6CCBB1BC9253B001A6657 /* iphone1.jpeg in Resources */,
-				2975033C1BCA5DD400A1447D /* cska.png in Resources */,
-				29F6CCCD1BC939A3001A6657 /* asd.png in Resources */,
-				2975033B1BCA5DD400A1447D /* chelsea.png in Resources */,
 				29F6CCAC1BC7F20B001A6657 /* LaunchScreen.storyboard in Resources */,
 				297503401BCA978000A1447D /* merc.jpeg in Resources */,
 				2975033F1BCA978000A1447D /* audi.png in Resources */,
 				29F6CCA91BC7F20B001A6657 /* Assets.xcassets in Resources */,
 				29F6CCA71BC7F20B001A6657 /* Main.storyboard in Resources */,
-				29F6CCBE1BC9253F001A6657 /* iphone4.jpeg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
