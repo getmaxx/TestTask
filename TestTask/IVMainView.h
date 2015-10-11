@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  IVMainView.h
 //  TestTask
 //
 //  Created by Игорь Веденеев on 09.10.15.
@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
+@interface IVMainView : UITableViewController
+
+@property (weak, nonatomic) IBOutlet UISearchBar *searchBar;
 
 @end
