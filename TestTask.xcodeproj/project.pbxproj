@@ -7,21 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2975033F1BCA978000A1447D /* audi.png in Resources */ = {isa = PBXBuildFile; fileRef = 2975033D1BCA978000A1447D /* audi.png */; settings = {ASSET_TAGS = (); }; };
-		297503401BCA978000A1447D /* merc.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 2975033E1BCA978000A1447D /* merc.jpeg */; settings = {ASSET_TAGS = (); }; };
 		29F6CC9E1BC7F20B001A6657 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29F6CC9D1BC7F20B001A6657 /* main.m */; };
 		29F6CCA11BC7F20B001A6657 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 29F6CCA01BC7F20B001A6657 /* AppDelegate.m */; };
 		29F6CCA71BC7F20B001A6657 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29F6CCA51BC7F20B001A6657 /* Main.storyboard */; };
 		29F6CCA91BC7F20B001A6657 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 29F6CCA81BC7F20B001A6657 /* Assets.xcassets */; };
 		29F6CCAC1BC7F20B001A6657 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29F6CCAA1BC7F20B001A6657 /* LaunchScreen.storyboard */; };
-		29F6CCB51BC7F474001A6657 /* IVMainView.m in Sources */ = {isa = PBXBuildFile; fileRef = 29F6CCB41BC7F474001A6657 /* IVMainView.m */; settings = {ASSET_TAGS = (); }; };
 		29F6CCB81BC81C8F001A6657 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 29F6CCB71BC81C8F001A6657 /* ViewController.m */; settings = {ASSET_TAGS = (); }; };
 		29F6CCC91BC93177001A6657 /* IVCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 29F6CCC81BC93177001A6657 /* IVCell.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2975033D1BCA978000A1447D /* audi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = audi.png; sourceTree = "<group>"; };
-		2975033E1BCA978000A1447D /* merc.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = merc.jpeg; sourceTree = "<group>"; };
 		29F6CC991BC7F20A001A6657 /* TestTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		29F6CC9D1BC7F20B001A6657 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		29F6CC9F1BC7F20B001A6657 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -30,8 +25,6 @@
 		29F6CCA81BC7F20B001A6657 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		29F6CCAB1BC7F20B001A6657 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		29F6CCAD1BC7F20B001A6657 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		29F6CCB31BC7F474001A6657 /* IVMainView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IVMainView.h; sourceTree = "<group>"; };
-		29F6CCB41BC7F474001A6657 /* IVMainView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IVMainView.m; sourceTree = "<group>"; };
 		29F6CCB61BC81C8F001A6657 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		29F6CCB71BC81C8F001A6657 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		29F6CCC71BC93177001A6657 /* IVCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IVCell.h; sourceTree = "<group>"; };
@@ -49,6 +42,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		29B1CC1E1BCC42FC000C9715 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				29F6CCB61BC81C8F001A6657 /* ViewController.h */,
+				29F6CCB71BC81C8F001A6657 /* ViewController.m */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
 		29F6CC901BC7F20A001A6657 = {
 			isa = PBXGroup;
 			children = (
@@ -68,13 +70,9 @@
 		29F6CC9B1BC7F20A001A6657 /* TestTask */ = {
 			isa = PBXGroup;
 			children = (
+				29B1CC1E1BCC42FC000C9715 /* ViewControllers */,
 				29F6CC9F1BC7F20B001A6657 /* AppDelegate.h */,
 				29F6CCA01BC7F20B001A6657 /* AppDelegate.m */,
-				29F6CCB31BC7F474001A6657 /* IVMainView.h */,
-				29F6CCB41BC7F474001A6657 /* IVMainView.m */,
-				29F6CCB61BC81C8F001A6657 /* ViewController.h */,
-				29F6CCB71BC81C8F001A6657 /* ViewController.m */,
-				29F6CCB91BC9252B001A6657 /* img */,
 				29F6CCA51BC7F20B001A6657 /* Main.storyboard */,
 				29F6CCA81BC7F20B001A6657 /* Assets.xcassets */,
 				29F6CCAA1BC7F20B001A6657 /* LaunchScreen.storyboard */,
@@ -92,15 +90,6 @@
 				29F6CC9D1BC7F20B001A6657 /* main.m */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		29F6CCB91BC9252B001A6657 /* img */ = {
-			isa = PBXGroup;
-			children = (
-				2975033D1BCA978000A1447D /* audi.png */,
-				2975033E1BCA978000A1447D /* merc.jpeg */,
-			);
-			name = img;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -162,8 +151,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				29F6CCAC1BC7F20B001A6657 /* LaunchScreen.storyboard in Resources */,
-				297503401BCA978000A1447D /* merc.jpeg in Resources */,
-				2975033F1BCA978000A1447D /* audi.png in Resources */,
 				29F6CCA91BC7F20B001A6657 /* Assets.xcassets in Resources */,
 				29F6CCA71BC7F20B001A6657 /* Main.storyboard in Resources */,
 			);
@@ -178,7 +165,6 @@
 			files = (
 				29F6CCA11BC7F20B001A6657 /* AppDelegate.m in Sources */,
 				29F6CCC91BC93177001A6657 /* IVCell.m in Sources */,
-				29F6CCB51BC7F474001A6657 /* IVMainView.m in Sources */,
 				29F6CCB81BC81C8F001A6657 /* ViewController.m in Sources */,
 				29F6CC9E1BC7F20B001A6657 /* main.m in Sources */,
 			);

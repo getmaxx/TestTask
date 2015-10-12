@@ -106,65 +106,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="K2y-ao-Eai" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="609" y="824"/>
-        </scene>
-        <!--Root View Controller-->
-        <scene sceneID="JS3-rS-DXG">
-            <objects>
-                <tableViewController id="8D0-ml-gJo" customClass="IVMainView" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="53" sectionHeaderHeight="28" sectionFooterHeight="28" id="JIg-KI-0q1">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <searchBar key="tableHeaderView" contentMode="redraw" placeholder="Ищу - свищу" id="zBf-yL-XCo">
-                            <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
-                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                            <textInputTraits key="textInputTraits"/>
-                        </searchBar>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="segmentedViewCell" id="Dg9-N3-7Um">
-                                <rect key="frame" x="0.0" y="72" width="600" height="53"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Dg9-N3-7Um" id="Zd3-Ou-xXu">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="52"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="JSM-9p-Sh9">
-                                            <rect key="frame" x="240" y="12" width="121" height="29"/>
-                                            <segments>
-                                                <segment title="First"/>
-                                                <segment title="Second"/>
-                                            </segments>
-                                        </segmentedControl>
-                                    </subviews>
-                                    <constraints>
-                                        <constraint firstItem="JSM-9p-Sh9" firstAttribute="centerX" secondItem="Zd3-Ou-xXu" secondAttribute="centerX" id="Dhq-dB-Xk3"/>
-                                        <constraint firstItem="JSM-9p-Sh9" firstAttribute="centerY" secondItem="Zd3-Ou-xXu" secondAttribute="centerY" id="Rki-Y3-XRb"/>
-                                    </constraints>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="contentCell" rowHeight="53" id="PJF-vA-mrs">
-                                <rect key="frame" x="0.0" y="125" width="600" height="53"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="PJF-vA-mrs" id="f0s-2m-heC">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="52"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="8D0-ml-gJo" id="WNN-ma-cJ5"/>
-                            <outlet property="delegate" destination="8D0-ml-gJo" id="1XN-k2-yGP"/>
-                        </connections>
-                    </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="BKG-PI-k1s"/>
-                    <connections>
-                        <outlet property="searchBar" destination="zBf-yL-XCo" id="BGg-GB-lac"/>
-                    </connections>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="FMj-Pg-s4U" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1239" y="354"/>
+            <point key="canvasLocation" x="654" y="433"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="ETK-rc-bH7">
@@ -181,7 +123,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="l1X-m7-i6q" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-84" y="442"/>
+            <point key="canvasLocation" x="-26" y="433"/>
         </scene>
     </scenes>
 </document>

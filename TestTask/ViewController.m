@@ -30,6 +30,8 @@
 
 @implementation ViewController
 
+#pragma mark - Lifecycle
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     
@@ -39,8 +41,8 @@
     
     self.cheatView.backgroundColor = [UIColor clearColor];
     
-    UITapGestureRecognizer* tapRecon = [[UITapGestureRecognizer alloc]
-                                        initWithTarget:self action:@selector(navigationBarTap:)];
+    UITapGestureRecognizer* tapRecon = [[UITapGestureRecognizer alloc] initWithTarget: self
+                                                                               action: @selector(navigationBarTap:)];
     tapRecon.numberOfTapsRequired = 1;
     [self.navigationController.navigationBar addGestureRecognizer:tapRecon];
     
@@ -51,16 +53,9 @@
     [self.arrayOfPictures addObject: img2];
     
     for (int i = 0; i < NUMBER_OF_ROWS; i++) {
-        
         [arrayOfHeights addObject: [self.arrayOfPictures objectAtIndex: arc4random() % [self.arrayOfPictures count]]];
-        
     }
        
-}
-
-- (IBAction) navigationBarTap:(id) sender {
-    [self.tableView setContentOffset: CGPointMake(0, -self.tableView.contentInset.top) animated: YES];
-    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -101,32 +96,20 @@
 - (void) scrollViewDidScroll:(UIScrollView *)scrollView {
     
     self.bounce = self.tableView.contentOffset.y >= (self.tableView.contentSize.height - self.tableView.bounds.size.height);
-    
     CGFloat delta = self.lastYCoord - scrollView.contentOffset.y;
-    
     self.lastYCoord = scrollView.contentOffset.y;
     
     if (delta < 0) {
-        
         if (!self.bounce) {
-            
             self.topConstraint.constant = (scrollView.contentOffset.y > 44) ? MAX(-52.5, self.topConstraint.constant + delta):
-                                                                              MAX( - 52.5, 44 - scrollView.contentOffset.y);
-            
+                                                                              MAX(-52.5, 44 - scrollView.contentOffset.y);
         }
-    }
-    else {
-        
+    } else {
         if (self.bounce) {
-            
             self.topConstraint.constant = - 52.5;
-            
-        }
-        else {
-            
+        } else {
             self.topConstraint.constant = ((scrollView.contentOffset.y > 44)) ? MIN(0, self.topConstraint.constant + delta):
                                                                                 44 - scrollView.contentOffset.y;
-            
         }
     }
     
@@ -139,10 +122,15 @@
 - (void) scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate {
     
     if (self.bounce) {
-        
         self.bounce = !self.bounce;
-        
     }
+    
+}
+
+#pragma mark - Actions
+
+- (IBAction) navigationBarTap:(id) sender {
+    [self.tableView setContentOffset: CGPointMake(0, -self.tableView.contentInset.top) animated: YES];
     
 }
 
