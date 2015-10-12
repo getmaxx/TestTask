@@ -16,7 +16,6 @@
 		29F6CCAC1BC7F20B001A6657 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29F6CCAA1BC7F20B001A6657 /* LaunchScreen.storyboard */; };
 		29F6CCB51BC7F474001A6657 /* IVMainView.m in Sources */ = {isa = PBXBuildFile; fileRef = 29F6CCB41BC7F474001A6657 /* IVMainView.m */; settings = {ASSET_TAGS = (); }; };
 		29F6CCB81BC81C8F001A6657 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 29F6CCB71BC81C8F001A6657 /* ViewController.m */; settings = {ASSET_TAGS = (); }; };
-		29F6CCC61BC9270C001A6657 /* IVModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 29F6CCC51BC9270C001A6657 /* IVModel.m */; settings = {ASSET_TAGS = (); }; };
 		29F6CCC91BC93177001A6657 /* IVCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 29F6CCC81BC93177001A6657 /* IVCell.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
@@ -35,8 +34,6 @@
 		29F6CCB41BC7F474001A6657 /* IVMainView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IVMainView.m; sourceTree = "<group>"; };
 		29F6CCB61BC81C8F001A6657 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		29F6CCB71BC81C8F001A6657 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		29F6CCC41BC9270C001A6657 /* IVModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IVModel.h; sourceTree = "<group>"; };
-		29F6CCC51BC9270C001A6657 /* IVModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IVModel.m; sourceTree = "<group>"; };
 		29F6CCC71BC93177001A6657 /* IVCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IVCell.h; sourceTree = "<group>"; };
 		29F6CCC81BC93177001A6657 /* IVCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IVCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -77,7 +74,6 @@
 				29F6CCB41BC7F474001A6657 /* IVMainView.m */,
 				29F6CCB61BC81C8F001A6657 /* ViewController.h */,
 				29F6CCB71BC81C8F001A6657 /* ViewController.m */,
-				29F6CCC01BC92555001A6657 /* Model */,
 				29F6CCB91BC9252B001A6657 /* img */,
 				29F6CCA51BC7F20B001A6657 /* Main.storyboard */,
 				29F6CCA81BC7F20B001A6657 /* Assets.xcassets */,
@@ -105,15 +101,6 @@
 				2975033E1BCA978000A1447D /* merc.jpeg */,
 			);
 			name = img;
-			sourceTree = "<group>";
-		};
-		29F6CCC01BC92555001A6657 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				29F6CCC41BC9270C001A6657 /* IVModel.h */,
-				29F6CCC51BC9270C001A6657 /* IVModel.m */,
-			);
-			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -189,7 +176,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				29F6CCC61BC9270C001A6657 /* IVModel.m in Sources */,
 				29F6CCA11BC7F20B001A6657 /* AppDelegate.m in Sources */,
 				29F6CCC91BC93177001A6657 /* IVCell.m in Sources */,
 				29F6CCB51BC7F474001A6657 /* IVMainView.m in Sources */,

@@ -9,7 +9,6 @@
 #import "ViewController.h"
 #import "IVCell.h"
 
-#define DEFAULT_OFFSET 0
 #define NUMBER_OF_ROWS 30
 
 @interface ViewController () <UISearchBarDelegate> {
@@ -18,11 +17,12 @@
 
 @property IBOutlet NSLayoutConstraint* topConstraint;
 @property CGFloat lastYCoord;
+@property BOOL bounce;
+
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (weak, nonatomic) IBOutlet UIView *segmentView;
 @property (weak, nonatomic) IBOutlet UIView *cheatView;
 @property (weak, nonatomic) IBOutlet UISearchBar *searchBar;
-@property BOOL bounce;
 
 @property NSMutableArray* arrayOfPictures;
 
