@@ -17,6 +17,8 @@
 
 @property IBOutlet NSLayoutConstraint* topConstraint;
 @property CGFloat lastYCoord;
+@property CGFloat searchBarHeight;
+@property CGFloat segmentViewHeight;
 @property BOOL bounce;
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
@@ -34,6 +36,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    self.searchBarHeight = self.searchBar.frame.size.height;
+    self.segmentViewHeight = self.segmentView.frame.size.height;
     
     arrayOfHeights = [NSMutableArray array];
     self.arrayOfPictures = [NSMutableArray array];
@@ -98,23 +103,29 @@
     self.bounce = self.tableView.contentOffset.y >= (self.tableView.contentSize.height - self.tableView.bounds.size.height);
     CGFloat delta = self.lastYCoord - scrollView.contentOffset.y;
     self.lastYCoord = scrollView.contentOffset.y;
+    CGFloat constantValue = self.topConstraint.constant;
     
     if (delta < 0) {
         if (!self.bounce) {
-            self.topConstraint.constant = (scrollView.contentOffset.y > 44) ? MAX(-52.5, self.topConstraint.constant + delta):
-                                                                              MAX(-52.5, 44 - scrollView.contentOffset.y);
+            self.topConstraint.constant = (scrollView.contentOffset.y > self.searchBarHeight) ? MAX(-self.segmentViewHeight, self.topConstraint.constant + delta):
+                                                                                                MAX(-self.segmentViewHeight, self.searchBarHeight - scrollView.contentOffset.y);
+            /*if (scrollView.contentOffset.y > 44) {
+                if (constantValue > -52.5) {
+             
+                }
+            }*/
         }
     } else {
         if (self.bounce) {
-            self.topConstraint.constant = - 52.5;
+            self.topConstraint.constant = -self.segmentViewHeight;
         } else {
-            self.topConstraint.constant = ((scrollView.contentOffset.y > 44)) ? MIN(0, self.topConstraint.constant + delta):
-                                                                                44 - scrollView.contentOffset.y;
+            self.topConstraint.constant = ((scrollView.contentOffset.y > self.searchBarHeight)) ? MIN(0, self.topConstraint.constant + delta):
+                                                                                                  self.searchBarHeight - scrollView.contentOffset.y;
         }
     }
     
     [self.view layoutIfNeeded];
-    
+    NSLog(@"%f %f", scrollView.contentOffset.y, self.topConstraint.constant);
     [self.searchBar resignFirstResponder];
     
 }

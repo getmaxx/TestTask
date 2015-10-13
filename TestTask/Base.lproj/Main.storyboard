@@ -76,7 +76,7 @@
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="55g-6O-CFI" secondAttribute="trailing" constant="12" id="1Q4-kj-PE8"/>
                                     <constraint firstItem="UHR-eK-Ee7" firstAttribute="centerY" secondItem="oWe-yb-tSD" secondAttribute="centerY" id="2uV-KJ-Im3"/>
-                                    <constraint firstAttribute="height" constant="52.5" id="7fn-IB-fG4"/>
+                                    <constraint firstAttribute="height" constant="52" id="7fn-IB-fG4"/>
                                     <constraint firstItem="UHR-eK-Ee7" firstAttribute="centerX" secondItem="oWe-yb-tSD" secondAttribute="centerX" id="lq8-tR-HnV"/>
                                     <constraint firstItem="55g-6O-CFI" firstAttribute="top" secondItem="oWe-yb-tSD" secondAttribute="top" id="qnK-Ur-gRc"/>
                                     <constraint firstItem="55g-6O-CFI" firstAttribute="leading" secondItem="oWe-yb-tSD" secondAttribute="leading" id="tVc-DM-rKT"/>
