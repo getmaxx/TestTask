@@ -40,8 +40,6 @@ static const int kNumberOfRowsInTableView = 30;
     self.segmentViewHeight = self.segmentView.frame.size.height;
     self.bounce = NO;
     
-    dataForTableView = [NSMutableArray array];
-    
     UITapGestureRecognizer* statusBarTapGestureRecognizer = [[UITapGestureRecognizer alloc] initWithTarget: self
                                                                                                     action: @selector(statusBarTap:)];
     
@@ -52,6 +50,7 @@ static const int kNumberOfRowsInTableView = 30;
     UIImage* img2 = [UIImage imageNamed: @"merc.jpeg"];
     NSArray* arrayOfPictures = @[img1, img2];
     
+    dataForTableView = [NSMutableArray array];
     for (int i = 0; i < kNumberOfRowsInTableView; i++) {
         [dataForTableView addObject: [arrayOfPictures objectAtIndex: arc4random() % [arrayOfPictures count]]];
     }
@@ -93,24 +92,24 @@ static const int kNumberOfRowsInTableView = 30;
     self.bounce = self.tableView.contentOffset.y >= (self.tableView.contentSize.height - self.tableView.bounds.size.height);
     CGFloat delta = self.lastYCoord - scrollView.contentOffset.y;
     self.lastYCoord = scrollView.contentOffset.y;
-    CGFloat constantValue = self.topConstraint.constant;
+    CGFloat currentConstantValue;
     
     if (delta < 0) {
         if (!self.bounce) {
-            constantValue = (scrollView.contentOffset.y > self.searchBarHeight) ? MAX(-self.segmentViewHeight, self.topConstraint.constant + delta):
-                                                                                  MAX(-self.segmentViewHeight, self.searchBarHeight - scrollView.contentOffset.y);
+            currentConstantValue = (scrollView.contentOffset.y > self.searchBarHeight) ? MAX(-self.segmentViewHeight, self.topConstraint.constant + delta):
+                                                                                         MAX(-self.segmentViewHeight, self.searchBarHeight - scrollView.contentOffset.y);
         }
     } else {
         if (self.bounce) {
-            constantValue = -self.segmentViewHeight;
+            currentConstantValue = -self.segmentViewHeight;
         } else {
-            constantValue = (scrollView.contentOffset.y > self.searchBarHeight) ? MIN(0, self.topConstraint.constant + delta):
-                                                                                  self.searchBarHeight - scrollView.contentOffset.y;
+            currentConstantValue = (scrollView.contentOffset.y > self.searchBarHeight) ? MIN(0, self.topConstraint.constant + delta):
+                                                                                         self.searchBarHeight - scrollView.contentOffset.y;
         }
     }
     
-    if (constantValue != self.topConstraint.constant) {
-        self.topConstraint.constant = constantValue;
+    if (currentConstantValue != self.topConstraint.constant) {
+        self.topConstraint.constant = currentConstantValue;
     }
     
     [self.view layoutIfNeeded];
