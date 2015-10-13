@@ -47,8 +47,18 @@
 			children = (
 				29F6CCB61BC81C8F001A6657 /* ViewController.h */,
 				29F6CCB71BC81C8F001A6657 /* ViewController.m */,
+				29B1CC1F1BCD3614000C9715 /* TableView Cell */,
 			);
 			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		29B1CC1F1BCD3614000C9715 /* TableView Cell */ = {
+			isa = PBXGroup;
+			children = (
+				29F6CCC71BC93177001A6657 /* IVCell.h */,
+				29F6CCC81BC93177001A6657 /* IVCell.m */,
+			);
+			name = "TableView Cell";
 			sourceTree = "<group>";
 		};
 		29F6CC901BC7F20A001A6657 = {
@@ -78,8 +88,6 @@
 				29F6CCAA1BC7F20B001A6657 /* LaunchScreen.storyboard */,
 				29F6CCAD1BC7F20B001A6657 /* Info.plist */,
 				29F6CC9C1BC7F20A001A6657 /* Supporting Files */,
-				29F6CCC71BC93177001A6657 /* IVCell.h */,
-				29F6CCC81BC93177001A6657 /* IVCell.m */,
 			);
 			path = TestTask;
 			sourceTree = "<group>";
