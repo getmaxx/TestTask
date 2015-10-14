@@ -98,7 +98,6 @@ static const int kNumberOfRowsInTableView = 30;
         if (!self.bounce) {
             self.currentTopConstraintConstant = (scrollView.contentOffset.y > self.searchBarHeight) ? MAX(-self.segmentViewHeight, self.currentTopConstraintConstant + delta):
                                                                                                       MAX(-self.segmentViewHeight, self.searchBarHeight - scrollView.contentOffset.y);
-            
         }
     } else {
         if (self.bounce) {
